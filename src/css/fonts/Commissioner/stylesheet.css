@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner-Bold.eot');
+    src: url('Commissioner-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Commissioner-Bold.woff2') format('woff2'),
+        url('Commissioner-Bold.woff') format('woff'),
+        url('Commissioner-Bold.ttf') format('truetype'),
+        url('Commissioner-Bold.svg#Commissioner-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
