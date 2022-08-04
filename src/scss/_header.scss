@@ -1,0 +1,84 @@
+.header {
+    .container {
+        padding: 2em 0 0 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            .logo-img {
+                width: 15.9em;
+                margin: 0.2em 0 0 0.2em;
+            }
+        }
+        .navigation {
+            margin: 0 5.6em 0 11.35em;
+            width: 64em;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            .nav-link {
+                text-decoration: none;
+                text-transform: lowercase;
+                color: $text;
+                font-size: 1.6em;
+                font-weight: 500;
+                letter-spacing: 0.03em;
+                transition: all 0.25s linear;
+                &:hover {
+                    color: $accent;
+                }
+                &.active {
+                    color: $accent;
+                }
+            }
+        }
+        .personal {
+            padding: 1.1em 0 1.4em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 6.8em;
+            .icon {
+                width: 2.5em;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                cursor: pointer;
+            }
+            .icon-favourites {
+                background-image: url(../img/icon-star.svg);
+                &:hover {
+                    fill: $accent;
+                    stroke: $accent;
+                }
+            }
+            .icon-search {
+                margin: 0 0 0.2em 0;
+                background-image: url(../img/icon-search.svg);
+                width: 2.8em;
+            }
+        }
+        .auth {
+            width: 12.65em;
+            margin: 0.5em 0 0.5em 2.35em;
+            background: #fff;
+            border-radius: 10em 10em 10em 10em;
+            background-image: url(../img/icon-auth.svg);
+            background-repeat: no-repeat;
+            background-position: 17% 40%;
+            padding: 1.2em 0 1.2em 5.85em;
+            text-decoration: none;
+            letter-spacing: .04em;
+            font-weight: 500;
+            color: $text;
+            .auth-caption {
+                font-size: 1.6em;
+            }
+        }
+    }
+}

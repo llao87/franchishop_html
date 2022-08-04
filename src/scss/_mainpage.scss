@@ -1,0 +1,84 @@
+.promo {
+    .container {
+        background: url(../img/header-main-bg.png);
+        background-position: 100.4% -52px;
+        background-size: 48.8%;
+        background-repeat: no-repeat;
+        padding: 5.1em 0 7.4em 5.6em;
+        .section-title {
+            position: static;
+            font-size: 6em;
+            max-width: 10em;
+            line-height: 1.115;
+            margin: 0 0 0.31em 0;
+            span {
+                display: inline-block;
+                margin: 0 0 0 0.2em;
+            }
+        }
+        .section-subtitle {
+            position: static;
+            font-size: 1.6em;
+            line-height: 1.4375;
+            letter-spacing: 0.03em;
+            display: inline-block;
+        }
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            background-image: url(../img/bg-rounds-top.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 130.2em;
+            height: 81.5em;
+            left: 34.9%;
+            top: -11.1em;
+            z-index: -1;
+        }
+    }
+}
+
+.fast-filter {
+    .container {
+        padding: 0 0.7em 0 0.3em;
+        .fast-filter-inner {
+            padding: 3.2em 4.8em;
+            background-color: #fff;
+            .title {
+                font-size: 2.4em;
+                line-height: 1.5417;
+                letter-spacing: 0.019em;
+                margin: 0 0 1em 0;
+            }
+            .form-fast-filter {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .filter-selector {
+                    width: 18.6em;
+                    border: 0.2em solid #3794fe;
+                    font-size: 1.6em;
+                    padding: 0.75em 0.95em 0.95em 0.95em;
+                    letter-spacing: .03em;
+                    border-radius: 12.5em;
+                    display: block;
+                }
+                .sphere {}
+                .category {}
+                .investitions {}
+                .btn {}
+                .btn-blue {}
+                .js-btn-send {}
+            }
+            .title-row {
+                .title {}
+                .show-all {}
+            }
+            .themes {
+                .theme {}
+            }
+        }
+    }
+}

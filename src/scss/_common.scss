@@ -2,14 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
 }
+
+html {}
+
 body {
+    width: 100%;
+    min-height: 100vh;
     font-family: 'Rubik', sans-serif;
     font-size: 10px;
+    background-color: $background;
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: 20em;
+        content: '';
+        background-image: url(../img/bg-rounds-bottom.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
+
 .container {
-    max-width: 1186px;
+    max-width: 1196px;
     margin: 0 auto;
-    background: #f3f3f3;
-    padding: 40px 0;
+}
+
+.accent {
+    color: $accent;
+}
+
+.section-title {
+    font-weight: bold;
+    font-family: 'Commissioner', sans-serif;
 }
