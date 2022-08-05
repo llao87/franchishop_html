@@ -9,8 +9,15 @@ html(lang="ru")
 		title= "Franchishop - Main page"
 		link(
 			rel="stylesheet",
-			href="css/style.min.css"
+			href="/css/style.min.css"
 		)
+		link(
+			rel="stylesheet",
+			href="/css/jquery.range.css"
+		)
+		script(src='/js/libs.min.js')
+		script(src='/js/jquery.range.js')
+		script(src='/js/main.js')
 	body
 		include ../pug-parts/header/header.pug
 		include ../pug-parts/main-page/index.pug

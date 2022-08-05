@@ -13,6 +13,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 10px;
     background-color: $background;
+
     &::after {
         display: block;
         position: absolute;
@@ -38,3 +39,21 @@ body {
     font-weight: bold;
     font-family: 'Commissioner', sans-serif;
 }
+
+.btn {
+    border: 2px solid transparent;
+    padding: 0.9em 1.7em 1.1em 2em;
+    font-size: 1.6em;
+    margin: 0 0 0 0.4em;
+    letter-spacing: 0.03em;
+    border-radius: 1.3em;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: $accent;
+    border-color: $accent;
+    color: #fff;
+}
+
+.btn-blue:hover {}
