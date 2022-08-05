@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
+    outline: none;
 }
 
-html {}
+html {
+    overflow-x: hidden;
+}
 
 body {
     width: 100%;
@@ -13,7 +16,6 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 10px;
     background-color: $background;
-
     &::after {
         display: block;
         position: absolute;
