@@ -37,9 +37,13 @@ body {
     color: $accent;
 }
 
-.section-title {
-    font-weight: bold;
-    font-family: 'Commissioner', sans-serif;
+.first-section {
+    padding: 4.95em 0 4.3em;
+    .section-title {
+        font-weight: bold;
+        font-family: 'Commissioner', sans-serif;
+        font-size: 6em;
+    }
 }
 
 .btn {
@@ -49,13 +53,27 @@ body {
     margin: 0 0 0 0.4em;
     letter-spacing: 0.03em;
     border-radius: 1.3em;
+    text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s linear;
 }
 
 .btn-blue {
     background-color: $accent;
     border-color: $accent;
     color: #fff;
+    &:hover {
+        background: $accentDark;
+        border-color: $accentDark;
+    }
 }
 
-.btn-blue:hover {}
+.btn-white {
+    background-color: #fff;
+    border-color: $accent;
+    color: $accent;
+    &:hover {
+        background: $accent;
+        color: #fff;
+    }
+}

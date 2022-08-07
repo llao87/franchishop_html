@@ -1,0 +1,97 @@
+.tech-support {
+    background-color: #fff;
+    overflow-y: hidden;
+    .container {
+        padding: 9.8em 0 9.5em 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 1;
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 66.8em;
+            height: 39.7em;
+            filter: blur(1.4em);
+            background-image: url(../img/form-mail-bg-cloud.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: 64.5em;
+            top: -22em;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 55em;
+            height: 35em;
+            background-image: url(../img/form-mail-bg-cloud.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: -31.5em;
+            top: 16em;
+            z-index: -1;
+            filter: blur(0.5em);
+        }
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Commissioner', sans-serif;
+            margin: 0 0 0 0.8em;
+            width: 6em;
+            flex: none;
+        }
+        .description {
+            font-size: 1.6em;
+            font-weight: 300;
+            margin: 0.1em 0 0 3.7em;
+            letter-spacing: 0.03em;
+            line-height: 1.43;
+            width: 20em;
+            flex: none;
+        }
+        .buttons {
+            display: inline-flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 0.3em 0 0 6.1em;
+            width: 25.1em;
+            .btn {}
+            .btn.btn-blue {
+                margin: 0 0 1em 0;
+                width: 100%;
+                padding: 0.9em 1.7em 1.1em 4.4em;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 1.3em;
+                    height: 1.3em;
+                    top: 50%;
+                    left: 1.9em;
+                    transform: translateY(-50%);
+                    background-image: url(../img/icon-phone-white.svg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                }
+            }
+            .btn.btn-white {
+                margin: 0;
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
