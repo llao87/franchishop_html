@@ -472,6 +472,7 @@
             .news-item {
                 max-width: 38em;
                 padding: 2.6em 2.4em;
+                padding: 2.1em 2.4em 2.7em;
                 display: flex;
                 align-items: flex-end;
                 flex-direction: column;
@@ -582,6 +583,78 @@
                     background-image: url(../img/icon-arrow-blk.svg);
                 }
             }
+        }
+    }
+}
+
+.subscribe {
+    background-color: #fff;
+    padding: 9.8em 0 6.1em;
+    overflow-y: hidden;
+    .container {
+        max-width: 1196px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 45em;
+            height: 25em;
+            background-image: url(../img/form-mail-bg-cloud.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: -24.5em;
+            top: 6em;
+        }
+        .title {
+            font-size: 2.5em;
+            max-width: 6em;
+            letter-spacing: .01em;
+            font-weight: 600;
+            font-family: "Commissioner", sans-serif;
+        }
+        .form-subscribe {
+            display: flex;
+            align-items: center;
+            margin: 0 0 0 7.5em;
+            justify-content: space-between;
+            width: 52.2em;
+            flex-wrap: wrap;
+            padding: 0.6em 0 0 0;
+            .input-text {
+                border: 2px solid $accent;
+                font-weight: 500;
+                font-size: 1.6em;
+                padding: 0.9em 1.8em 1.1em;
+                width: 22.5em;
+                border-radius: 1.25em;
+                letter-spacing: .019em;
+            }
+            .btn {}
+            .btn-blue {}
+            .description {
+                font-size: 1.6em;
+                font-weight: 300;
+                line-height: 1.5;
+                margin: 1.35em 0 0 0.2em;
+                letter-spacing: .03em;
+                width: 25em;
+            }
+        }
+        .mail-photo {
+            background-image: url(../img/form-mail-letter-img.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 39.2em;
+            height: 27.9em;
+            top: -9.2em;
+            right: 4em;
         }
     }
 }
