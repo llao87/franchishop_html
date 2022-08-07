@@ -1,0 +1,137 @@
+.news-section {
+    padding: 4.95em 0 4.3em;
+    .container {
+        .section-title {
+            font-size: 6em;
+        }
+        .news-list {
+            padding: 5.7em 0 0 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .news-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                max-width: 38em;
+                overflow: hidden;
+                padding: 2.2em 2.4em;
+                background: #fff;
+                border-radius: 2em;
+                height: 49.4em;
+                margin: 0 0 2.5em 0;
+                text-decoration: none;
+                color: $text;
+                filter: drop-shadow(0px 4px 4px rgba(221, 229, 237, 0.25));
+                .news-item-inner {
+                    .photo {
+                        height: 17.8em;
+                        border-radius: 1em;
+                        overflow: hidden;
+                        margin: 0 0 1.7em 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .photo-img {
+                            max-width: 100%;
+                            max-height: 100%;
+                            width: auto;
+                            height: auto;
+                        }
+                        .category {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            top: 0;
+                            background: #fff;
+                            font-size: 1.6em;
+                            width: 8.1em;
+                            font-weight: 500;
+                            padding: 0 0 0.9em 0;
+                            text-transform: lowercase;
+                            letter-spacing: 0;
+                            line-height: 1;
+                            border-radius: 0 0 0.6em 0.6em;
+                            color: $accent;
+                        }
+                    }
+                    .news-item-name {
+                        font-size: 1.6em;
+                        font-weight: bold;
+                        letter-spacing: 0.017em;
+                        line-height: 1.43;
+                        margin: 0 0 1.5em 0;
+                        transition: all 0.3s linear;
+                    }
+                    .preview-text {
+                        line-height: 1.43;
+                        font-size: 1.6em;
+                        font-weight: 300;
+                        letter-spacing: 0.029em;
+                    }
+                }
+                .more {
+                    position: absolute;
+                    bottom: 2.9em;
+                    right: 2.7em;
+                    background-image: url(../img/icon-arrow-blk.svg);
+                    display: block;
+                    width: 1.65em;
+                    height: 1.65em;
+                    background-position: center;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    z-index: 5;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                }
+                &:hover {
+                    .news-item-inner {
+                        .news-item-name {
+                            color: $accent;
+                        }
+                    }
+                    .more {
+                        background-image: url(../img/icon-arrow.svg);
+                    }
+                }
+            }
+        }
+        .load-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3.1em 0;
+            .more {
+                display: inline-block;
+                font-size: 1.6em;
+                font-weight: bold;
+                text-transform: lowercase;
+                padding: 0 2em 0 0.8em;
+                z-index: 1;
+                cursor: pointer;
+                transition: all .3s linear;
+                &::after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: 1em;
+                    height: 1em;
+                    background-image: url(../img/icon-arrow-load-more.svg);
+                    background-position: center right;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    top: 0;
+                    right: 0;
+                }
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
