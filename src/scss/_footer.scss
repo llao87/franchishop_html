@@ -1,0 +1,206 @@
+footer {
+    overflow-y: hidden;
+    padding: 7.4em 0;
+    .container {
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 99.5em;
+            height: 100em;
+            background-image: url(../img/bg-rounds-footer.svg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: 28.4em;
+            bottom: -74.4em;
+        }
+        .top {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            .socials {
+                width: 20em;
+                flex: none;
+                .title {
+                    font-family: "Commissioner";
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    margin: 0 0 3.6em 0;
+                }
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding: 0 0.4em 0 0.2em;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 7.8em;
+                        height: 7.8em;
+                        background: #fff;
+                        box-shadow: 0px 0.4em 0.4em rgba(221, 229, 237, 0.25);
+                        border-radius: 2em;
+                        background-position: center;
+                        background-size: 60%;
+                        background-repeat: no-repeat;
+                        margin: 0 0 3em 0;
+                    }
+                    .icon-tg {
+                        background-image: url(../img/icon-tg.svg);
+                    }
+                    .icon-vk {
+                        background-image: url(../img/icon-vk.svg);
+                    }
+                    .icon-wa {
+                        background-image: url(../img/icon-wa.svg);
+                    }
+                    .icon-fb {
+                        background-image: url(../img/icon-fb.svg);
+                    }
+                }
+            }
+            .info {
+                width: 100%;
+                flex: auto;
+                padding: 0 0 0 13.3em;
+                .links {
+                    .title {
+                        font-family: "Commissioner";
+                        font-size: 2.5em;
+                        font-weight: bold;
+                        line-height: 1.2;
+                        margin: 0 0 0.8em 0;
+                    }
+                    .fast-links {
+                        width: 50em;
+                        margin: 0 0 4.4em 0;
+                        .link {
+                            font-size: 1.6em;
+                            text-decoration: none;
+                            line-height: 1.43;
+                            color: #555;
+                            font-weight: 300;
+                            letter-spacing: 0.035em;
+                            text-transform: lowercase;
+                            transition: all 0.3s linear;
+                            &:hover {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+                .contacts {
+                    color: $text;
+                    .title {
+                        font-family: "Commissioner";
+                        font-size: 2.5em;
+                        font-weight: bold;
+                        line-height: 1.2;
+                        margin: 0 0 0.7em 0;
+                    }
+                    .phone {
+                        font-size: 1.6em;
+                        font-weight: 300;
+                        letter-spacing: 0.03em;
+                        line-height: 1.43;
+                        text-transform: lowercase;
+                        .contacts-link {
+                            text-decoration: none;
+                            color: inherit;
+                            transition: all 0.3s linear;
+                            &:hover {
+                                color: $accent;
+                            }
+                        }
+                    }
+                    .email {
+                        font-size: 1.6em;
+                        font-weight: 300;
+                        letter-spacing: 0.03em;
+                        line-height: 1.43;
+                        text-transform: lowercase;
+                        .contacts-link {
+                            text-decoration: none;
+                            color: inherit;
+                            transition: all 0.3s linear;
+                            &:hover {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+            .menu {
+                width: 14.8em;
+                flex: none;
+                .title {
+                    font-family: "Commissioner";
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    margin: 0 0 0.78em 0;
+                }
+                .menu-list {
+                    list-style-type: none;
+                    padding: 0 0 0 0.2em;
+                    margin: 0;
+                    .menu-item {
+                        margin: 0 0 2.4em 0;
+                        .menu-link {
+                            font-weight: 300;
+                            font-size: 1.6em;
+                            line-height: 1.43;
+                            color: inherit;
+                            letter-spacing: 0.03em;
+                            text-transform: lowercase;
+                            text-decoration: none;
+                            transition: all 0.3s linear;
+                            &:hover {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom {
+            margin: 3.4em 0;
+            border-top: 0.3em solid #fff;
+            padding: 2.9em 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo {
+                padding: 0 0 0 0.2em;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                .logo-link {
+                    margin: 0.2em 1.1em 0 0;
+                    .logo-img {}
+                }
+                .copyrights {
+                    font-size: 1.6em;
+                    font-weight: 300;
+                    letter-spacing: 0.03em;
+                    padding: 0 0 0.2em 0;
+                }
+            }
+            .user-agreement {
+                font-size: 1.6em;
+                font-weight: 300;
+                line-height: 1.43;
+                text-decoration: none;
+                color: inherit;
+                width: 9.7em;
+                text-align: left;
+                margin: 0.8em 0 0 0;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+}
