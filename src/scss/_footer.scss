@@ -57,9 +57,11 @@ footer {
                     }
                     .icon-wa {
                         background-image: url(../img/icon-wa.svg);
+                        margin: 0;
                     }
                     .icon-fb {
                         background-image: url(../img/icon-fb.svg);
+                        margin: 0;
                     }
                 }
             }
@@ -77,7 +79,7 @@ footer {
                     }
                     .fast-links {
                         width: 50em;
-                        margin: 0 0 4.4em 0;
+                        margin: 0;
                         .link {
                             font-size: 1.6em;
                             text-decoration: none;
@@ -95,6 +97,7 @@ footer {
                 }
                 .contacts {
                     color: $text;
+                    padding: 4.45em 0 0 0;
                     .title {
                         font-family: "Commissioner";
                         font-size: 2.5em;
@@ -205,6 +208,14 @@ footer {
                     color: $accent;
                 }
             }
+        }
+    }
+}
+
+footer {
+    .container {
+        .top {
+            margin: 0 0 3.9em 0;
         }
     }
 }

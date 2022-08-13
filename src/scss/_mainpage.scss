@@ -11,6 +11,7 @@
             max-width: 10em;
             line-height: 1.115;
             margin: 0 0 0.31em 0;
+            font-family: 'Commissioner', sans-serif;
             span {
                 display: inline-block;
                 margin: 0 0 0 0.2em;
@@ -146,7 +147,7 @@
                 .theme {
                     font-size: 1.6em;
                     font-weight: 300;
-                    padding: 0.4em 1.6em 0.65em;
+                    padding: 0.5em 1.6em;
                     text-transform: lowercase;
                     letter-spacing: 0.03em;
                     border-radius: 0.5em;
@@ -684,6 +685,17 @@
             height: 27.9em;
             top: -9.2em;
             right: 4em;
+        }
+    }
+}
+
+.news-item {
+    .subscribe {
+        padding: 8.7em 0 12.1em;
+        .container {
+            .title {
+                padding: 0 0 0 0.85em;
+            }
         }
     }
 }
