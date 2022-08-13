@@ -14,7 +14,8 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: 'Rubik', sans-serif;
-    font-size: 10px;
+    // font-size: 10px;
+    font-size: 0.520835vw;
     background-color: $background;
     &::after {
         display: block;
@@ -29,7 +30,8 @@ body {
 }
 
 .container {
-    max-width: 1196px;
+    // max-width: 1196px;
+    max-width: 119.6em;
     margin: 0 auto;
 }
 

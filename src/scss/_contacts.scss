@@ -136,9 +136,13 @@
                 background-color: #fff;
                 border-radius: 2em;
                 .map-inner {
+                    width: 100%;
                     border-radius: 1em;
                     overflow: hidden;
-                    iframe {}
+                    .map {
+                        width: 74em;
+                        height: 63em;
+                    }
                 }
             }
         }
