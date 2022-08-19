@@ -1,0 +1,294 @@
+.first-section.franchise-section {
+    padding: 3.4em 0 7em;
+    .container {
+        .breadcrubs {
+            .breadcrubs-item {
+                .breadcrubs-link {
+                    color: $accent;
+                    text-transform: lowercase;
+                    font-size: 1.6em;
+                    font-weight: 300;
+                    letter-spacing: 0.03em;
+                }
+                a.breadcrubs-link {
+                    text-decoration: none;
+                    margin: 0 0.9em 0 0.2em;
+                    &::after {
+                        position: absolute;
+                        width: 1em;
+                        height: auto;
+                        content: "/";
+                        margin: 0 0.2em;
+                        top: 50%;
+                        right: -1.6em;
+                        transform: translateY(-50%);
+                    }
+                }
+                span.breadcrubs-link {
+                    margin: 0 0 0 0.2em;
+                }
+            }
+        }
+        .section-title {
+            font-size: 6em;
+            margin: -0.05em 0 0 0;
+        }
+        .franchise-info {
+            margin: 6.7em 0 6em 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 2.8em 3.8em 2.8em 2.6em;
+            background-color: #fff;
+            border-radius: 2em;
+            .data {
+                margin: 0px 6.4em 0 0;
+                flex: 1;
+                .row-top {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin: 0 0 4.8em 0;
+                    .franchise-logo {
+                        width: 15em;
+                        overflow: hidden;
+                        height: 6em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        .logo-img {
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                    .category {
+                        background-color: #fff6d4;
+                        font-size: 1.6em;
+                        font-weight: 300;
+                        padding: 0.5em 1.6em;
+                        text-transform: lowercase;
+                        letter-spacing: 0.03em;
+                        border-radius: 0.5em;
+                        margin: 0 0 1.05em 0;
+                        text-decoration: none;
+                        color: #42454e;
+                        transition: all 0.3s linear;
+                    }
+                }
+                .row-middle {
+                    margin: 0 0 11em 0;
+                    .title {
+                        font-size: 2.4em;
+                        line-height: 1;
+                        margin: 0 0 0.75em 0.1em;
+                        letter-spacing: 0.021em;
+                        font-weight: 600;
+                    }
+                    .description {
+                        font-weight: 300;
+                        font-size: 1.6em;
+                        line-height: 1.43;
+                        letter-spacing: 0.03em;
+                    }
+                }
+                .row-bottom {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .investments {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 0 3.1em 0 0;
+                        .investment-item {
+                            padding: 0 0 0 1.8em;
+                            border-left: 0.2em solid $accent;
+                            .title {
+                                font-size: 1.6em;
+                                line-height: 1;
+                                letter-spacing: 0.03em;
+                                font-weight: 300;
+                            }
+                            .text {
+                                font-size: 1.6em;
+                                font-weight: 500;
+                                letter-spacing: 0.03em;
+                                margin: 0.2em 0 0 0;
+                            }
+                        }
+                        .payback-period {
+                            padding: 0 0 0 1.8em;
+                            border-left: 0.2em solid $accent;
+                            .title {
+                                font-size: 1.6em;
+                                line-height: 1;
+                                letter-spacing: 0.03em;
+                                font-weight: 300;
+                            }
+                            .text {
+                                font-size: 1.6em;
+                                font-weight: 500;
+                                letter-spacing: 0.03em;
+                                margin: 0.2em 0 0 0;
+                            }
+                        }
+                    }
+                    .btn {
+                        margin: 3.8em 0 0 0;
+                    }
+                    .btn-blue {}
+                }
+            }
+            .cover {
+                .cover-img {}
+            }
+        }
+        .franchise-counters {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .info {
+                width: 38em;
+                padding: 2em 0;
+                .block-title {
+                    font-size: 2em;
+                    font-weight: 500;
+                    color: $accent;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    margin: 0 0 1.3em 0;
+                }
+                .text {
+                    font-size: 1.6em;
+                    font-weight: 300;
+                    letter-spacing: 0.035em;
+                    line-height: 1.43;
+                }
+            }
+            .counters {
+                width: 73.4em;
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .counter {
+                    width: 31.5%;
+                    background-color: #fff;
+                    border-radius: 1em;
+                    padding: 1em 1.8em 1.7em;
+                    margin: 0 0 2.7em 0;
+                    .digits {
+                        font-weight: 500;
+                        color: $accent;
+                        letter-spacing: 0.03em;
+                        .digit {
+                            font-size: 6.6em;
+                        }
+                        .remark {
+                            font-size: 2.4em;
+                        }
+                    }
+                    .text {
+                        color: $text;
+                        font-size: 1.6em;
+                        font-weight: 300;
+                        margin: 0 0 0 0.3em;
+                        line-height: 1.43;
+                        letter-spacing: 0.03em;
+                        min-height: 2.859375em;
+                    }
+                }
+                .counter--common {
+                    .digits {}
+                    .text {}
+                }
+                .counter--price {
+                    .digits {
+                        .currency {}
+                    }
+                    .text {}
+                }
+                .counter--percents {
+                    .digits {
+                        .currency {}
+                    }
+                    .text {}
+                }
+                .controls {
+                    margin: 0.4em 0 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    .btn {
+                        margin: 0;
+                    }
+                    .btn-blue {}
+                    .presentation-link {
+                        display: block;
+                        text-decoration: none;
+                        font-size: 1.6em;
+                        max-width: 11.7em;
+                        line-height: 1.43;
+                        transition: all 0.3s linear;
+                        cursor: pointer;
+                        color: $accent;
+                        &::after {
+                            position: absolute;
+                            display: block;
+                            content: "";
+                            width: 2em;
+                            height: 2.2em;
+                            top: 50%;
+                            left: -3.05em;
+                            transform: translateY(-50%);
+                            background-image: url(../img/icon-pdf.svg);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                        &:hover {
+                            color: $accentDark;
+                            &::after {}
+                        }
+                        &:active {
+                            color: $accentDark;
+                        }
+                    }
+                }
+            }
+        }
+        .franchise-advantages {
+            .block-title {}
+            .advantages {
+                .advantage {
+                    .icon {
+                        .icon-img {}
+                    }
+                    .text {}
+                }
+            }
+        }
+        .franchise-steps {
+            .block-title {}
+            .steps {
+                .step {
+                    .icon {}
+                    .text {}
+                }
+            }
+        }
+        .franchise-gallery {
+            .row-top {
+                .block-title {}
+                .controls {
+                    .prev {}
+                    .next {}
+                }
+            }
+            .gallery {}
+        }
+    }
+}
