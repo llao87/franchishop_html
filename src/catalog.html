@@ -19,53 +19,146 @@
         </div><a class="auth" href="/lk/"><span class="auth-caption">Войти</span></a>
       </div>
     </header>
-    <div class="subscribe"> 
+    <div class="first-section favourite-franchise-section"> 
       <div class="container"> 
-        <div class="title">Получайте новости</div>
-        <form class="form-subscribe">
-          <input class="input-text" type="text" name="email" placeholder="ваша почта">
-          <input class="btn btn-blue" type="submit" value="получить">
-          <div class="description">Вышлем на почту бесплатную подборку франшиз с инвестицией от 15 000 до 700 000 тыс. руб.</div>
-        </form>
-        <div class="mail-photo"></div>
+        <div class="section-title">Каталог франшиз</div>
+        <div class="favourite-franchise">
+          <div class="photo"> <img class="photo-img" src="../../img/favourite-franchise.jpg"></div>
+          <div class="info">
+            <div class="row-top">
+              <div class="name">Cinnabon</div>
+              <div class="fr-logo"><img class="fr-logo-img" src="../../img/logo-cinnabon.png" alt=""></div>
+            </div>
+            <div class="row-middle">
+              <div class="description">Европа продолжает вводить новые санкции против России, и в первую очередь ограничения коснулись банков и крупных компаний, иностранные счета которых были заморожены.</div>
+            </div>
+            <div class="row-bottom">
+              <div class="category">кафе и рестораны</div>
+              <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <footer>
-      <div class="container"> 
-        <div class="top">
-          <div class="socials"> 
-            <div class="title">Наши соцсети</div>
-            <div class="icons"> <a class="icon icon-tg" href="#"> </a><a class="icon icon-vk" href="#"> </a><a class="icon icon-wa" href="#"> </a><a class="icon icon-fb" href="#"></a></div>
-          </div>
-          <div class="info">
-            <div class="links">
-              <div class="title">Франшизы</div>
-              <div class="fast-links"> <a class="link" href="#">Франшиза кафе и ресторанов</a>, <br><a class="link" href="#">Топ франшиз</a>, <a class="link" href="#">Недорогие франшизы</a>, <a class="link" href="#">Франшизы одежды</a>, <br><a class="link" href="#">Франшизы интернет-магазины</a>, <a class="link" href="#">Франшизы ресторана</a>, <br><a class="link" href="#">Франшизы в сфере услуг</a>, <a class="link" href="#">Франшиза по производству</a>, <br><a class="link" href="#">Франшиза по авто</a></div>
+    <div class="catalog-section">
+      <div class="container">
+        <div class="catalog-aside">
+          <form class="filter"> 
+            <div class="selector-wrap">
+              <select class="filter-selector category" name="category"></select>
             </div>
-            <div class="contacts"> 
-              <div class="title">Контакты</div>
-              <div class="phone">Телефон:  <a class="contacts-link" href="tel:+54957503020">+5 495 750 30 20</a></div>
-              <div class="email">Почта: <a class="contacts-link" href="mailto:info@franchishop.ru">info@franchishop.ru</a></div>
+            <div class="selector-wrap">
+              <select class="filter-selector investment" name="investment"></select>
             </div>
-          </div>
-          <div class="menu">
-            <div class="title">Меню</div>
-            <ul class="menu-list"> 
-              <li class="menu-item"><a class="menu-link" href="#">Главная</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Каталог франшиз</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Инвестиции</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Новости</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">Личный кабинет</a></li>
-              <li class="menu-item"><a class="menu-link" href="#">О компании</a></li>
-            </ul>
-          </div>
+            <div class="field-wrap">
+              <btn class="filter-field top js-top" name="top">Топ франшиз</btn>
+            </div>
+            <div class="field-wrap">
+              <btn class="filter-field cheap js-cheap" name="cheap">Недорогие франшизы</btn>
+            </div>
+            <div class="field-wrap">
+              <btn class="filter-field popular js-popular" name="popular">Популярные франшизы</btn>
+            </div>
+          </form>
+          <div class="banner"><img class="banner-img" src="/img/banner.jpg" alt=""></div>
         </div>
-        <div class="bottom">
-          <div class="logo"> <a class="logo-link" href="/"> <img class="logo-img" src="/img/logo-footer.svg"></a>
-            <div class="copyrights">© все права защищены</div>
-          </div><a class="user-agreement" href="#">пользовательское соглашение</a>
+        <div class="franchises">
+          <form class="sort-blocks"> 
+            <div class="selector-wrap">
+              <select class="filter-selector sort-popularity" name="sort-popularity"></select>
+            </div>
+            <div class="selector-wrap">
+              <select class="filter-selector sort-region" name="sort-region"></select>
+            </div>
+            <div class="selector-wrap">
+              <select class="filter-selector sort-category" name="sort-category"></select>
+            </div>
+            <div class="selector-wrap">
+              <select class="filter-selector sort-investment" name="sort-investment"></select>
+            </div>
+          </form>
+          <div class="franchises-list">
+            <div class="franchise">
+              <div class="row-top"> 
+                <div class="name">Пятерочка</div>
+                <div class="fr-logo"> <img class="fr-logo-img" src="../../img/logo-pyaterochka.png" alt="Пятерочка"></div>
+              </div>
+              <div class="row-middle"> 
+                <div class="photo"><img class="photo-img" src="../../img/pyaterochka.jpg" alt="Фото Пятерочка"></div>
+              </div>
+              <div class="row-bottom"> 
+                <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+              </div>
+            </div>
+            <div class="franchise">
+              <div class="row-top"> 
+                <div class="name">Пятерочка</div>
+                <div class="fr-logo"> <img class="fr-logo-img" src="../../img/logo-pyaterochka.png" alt="Пятерочка"></div>
+              </div>
+              <div class="row-middle"> 
+                <div class="photo"><img class="photo-img" src="../../img/pyaterochka.jpg" alt="Фото Пятерочка"></div>
+              </div>
+              <div class="row-bottom"> 
+                <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+              </div>
+            </div>
+            <div class="franchise">
+              <div class="row-top"> 
+                <div class="name">Пятерочка</div>
+                <div class="fr-logo"> <img class="fr-logo-img" src="../../img/logo-pyaterochka.png" alt="Пятерочка"></div>
+              </div>
+              <div class="row-middle"> 
+                <div class="photo"><img class="photo-img" src="../../img/pyaterochka.jpg" alt="Фото Пятерочка"></div>
+              </div>
+              <div class="row-bottom"> 
+                <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+              </div>
+            </div>
+            <div class="franchise">
+              <div class="row-top"> 
+                <div class="name">Пятерочка</div>
+                <div class="fr-logo"> <img class="fr-logo-img" src="../../img/logo-pyaterochka.png" alt="Пятерочка"></div>
+              </div>
+              <div class="row-middle"> 
+                <div class="photo"><img class="photo-img" src="../../img/pyaterochka.jpg" alt="Фото Пятерочка"></div>
+              </div>
+              <div class="row-bottom"> 
+                <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+              </div>
+            </div>
+            <div class="franchise">
+              <div class="row-top"> 
+                <div class="name">Пятерочка</div>
+                <div class="fr-logo"> <img class="fr-logo-img" src="../../img/logo-pyaterochka.png" alt="Пятерочка"></div>
+              </div>
+              <div class="row-middle"> 
+                <div class="photo"><img class="photo-img" src="../../img/pyaterochka.jpg" alt="Фото Пятерочка"></div>
+              </div>
+              <div class="row-bottom"> 
+                <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+              </div>
+            </div>
+            <div class="franchise">
+              <div class="row-top"> 
+                <div class="name">Пятерочка</div>
+                <div class="fr-logo"> <img class="fr-logo-img" src="../../img/logo-pyaterochka.png" alt="Пятерочка"></div>
+              </div>
+              <div class="row-middle"> 
+                <div class="photo"><img class="photo-img" src="../../img/pyaterochka.jpg" alt="Фото Пятерочка"></div>
+              </div>
+              <div class="row-bottom"> 
+                <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
+                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
