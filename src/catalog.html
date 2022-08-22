@@ -97,7 +97,7 @@
         <div class="franchises">
           <form class="sort-blocks"> 
             <div class="selector-wrap">
-              <select class="filter-selector sort-popularity" name="sort-popularity">
+              <select class="filter-selector sort-popularity js-sort-popularity" name="sort-popularity">
                 <option selected>Популярности </option>
                 <option>Дате публикации </option>
                 <option>От дешевых к дорогим </option>
@@ -105,7 +105,7 @@
               </select>
             </div>
             <div class="selector-wrap">
-              <select class="filter-selector sort-region" name="sort-region">
+              <select class="filter-selector sort-region js-sort-region" name="sort-region">
                 <option selected>Вся Россия</option>
                 <option>Алтайский край</option>
                 <option>Амурская область</option>
@@ -120,7 +120,7 @@
                 <option>Еврейская автономная область</option>
                 <option>Забайкальский край</option>
                 <option>Ивановская область</option>
-                <option>Иные территории включая город и космодром Байконур</option>
+                <option>Иные территории, гор. и космодром Байконур</option>
                 <option>Иркутская область</option>
                 <option>Кабардино-Балкарская Республика</option>
                 <option>Калининградская область</option>
@@ -196,7 +196,7 @@
               </select>
             </div>
             <div class="selector-wrap">
-              <select class="filter-selector sort-category" name="sort-category">
+              <select class="filter-selector sort-category js-sort-category" name="sort-category">
                 <option selected>Все франшизы</option>
                 <option>Авто</option>
                 <option>Бижутерия и аксессуары</option>
@@ -217,13 +217,13 @@
                 <option>Строительство</option>
                 <option>Товары для дома</option>
                 <option>Товары для здоровья</option>
-                <option>Услуги для бизнеса \(b2b\)</option>
+                <option>Услуги для бизнеса (b2b)</option>
                 <option>Услуги для населения</option>
                 <option>Финансовые услуги</option>
               </select>
             </div>
             <div class="selector-wrap">
-              <select class="filter-selector sort-investment" name="sort-investment">
+              <select class="filter-selector sort-investment js-sort-investment" name="sort-investment">
                 <option selected>Любая сумма</option>
                 <option>до 500 тыс</option>
                 <option>500 тыс. – 1 млн</option>
@@ -245,7 +245,7 @@
               </div>
               <div class="row-bottom"> 
                 <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
-                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+                <div class="category">розничная торговля</div><a class="more" href="#">Подробнее</a>
               </div>
             </div>
             <div class="franchise">
@@ -258,7 +258,7 @@
               </div>
               <div class="row-bottom"> 
                 <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
-                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+                <div class="category">розничная торговля</div><a class="more" href="#">Подробнее</a>
               </div>
             </div>
             <div class="franchise">
@@ -271,7 +271,7 @@
               </div>
               <div class="row-bottom"> 
                 <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
-                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+                <div class="category">розничная торговля</div><a class="more" href="#">Подробнее</a>
               </div>
             </div>
             <div class="franchise">
@@ -284,7 +284,7 @@
               </div>
               <div class="row-bottom"> 
                 <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
-                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+                <div class="category">розничная торговля</div><a class="more" href="#">Подробнее</a>
               </div>
             </div>
             <div class="franchise">
@@ -297,7 +297,7 @@
               </div>
               <div class="row-bottom"> 
                 <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
-                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+                <div class="category">розничная торговля</div><a class="more" href="#">Подробнее</a>
               </div>
             </div>
             <div class="franchise">
@@ -310,12 +310,63 @@
               </div>
               <div class="row-bottom"> 
                 <div class="investment"> <span class="label">Инвестиции: </span><span class="value">5 000 000 </span><span class="currency">руб.</span></div>
-                <div class="category">розничная торговля</div><a class="more" href="#"> </a>
+                <div class="category">розничная торговля</div><a class="more" href="#">Подробнее</a>
               </div>
             </div>
+          </div>
+          <div class="show-more-wrap"> 
+            <div class="show-more js-show-more">Показать больше</div>
           </div>
         </div>
       </div>
     </div>
+    <div class="subscribe"> 
+      <div class="container"> 
+        <div class="title">Получайте новости</div>
+        <form class="form-subscribe">
+          <input class="input-text" type="text" name="email" placeholder="ваша почта">
+          <input class="btn btn-blue" type="submit" value="получить">
+          <div class="description">Вышлем на почту бесплатную подборку франшиз с инвестицией от 15 000 до 700 000 тыс. руб.</div>
+        </form>
+        <div class="mail-photo"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="container"> 
+        <div class="top">
+          <div class="socials"> 
+            <div class="title">Наши соцсети</div>
+            <div class="icons"> <a class="icon icon-tg" href="#"> </a><a class="icon icon-vk" href="#"> </a><a class="icon icon-wa" href="#"> </a><a class="icon icon-fb" href="#"></a></div>
+          </div>
+          <div class="info">
+            <div class="links">
+              <div class="title">Франшизы</div>
+              <div class="fast-links"> <a class="link" href="#">Франшиза кафе и ресторанов</a>, <br><a class="link" href="#">Топ франшиз</a>, <a class="link" href="#">Недорогие франшизы</a>, <a class="link" href="#">Франшизы одежды</a>, <br><a class="link" href="#">Франшизы интернет-магазины</a>, <a class="link" href="#">Франшизы ресторана</a>, <br><a class="link" href="#">Франшизы в сфере услуг</a>, <a class="link" href="#">Франшиза по производству</a>, <br><a class="link" href="#">Франшиза по авто</a></div>
+            </div>
+            <div class="contacts"> 
+              <div class="title">Контакты</div>
+              <div class="phone">Телефон:  <a class="contacts-link" href="tel:+54957503020">+5 495 750 30 20</a></div>
+              <div class="email">Почта: <a class="contacts-link" href="mailto:info@franchishop.ru">info@franchishop.ru</a></div>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="title">Меню</div>
+            <ul class="menu-list"> 
+              <li class="menu-item"><a class="menu-link" href="#">Главная</a></li>
+              <li class="menu-item"><a class="menu-link" href="#">Каталог франшиз</a></li>
+              <li class="menu-item"><a class="menu-link" href="#">Инвестиции</a></li>
+              <li class="menu-item"><a class="menu-link" href="#">Новости</a></li>
+              <li class="menu-item"><a class="menu-link" href="#">Личный кабинет</a></li>
+              <li class="menu-item"><a class="menu-link" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="logo"> <a class="logo-link" href="/"> <img class="logo-img" src="/img/logo-footer.svg"></a>
+            <div class="copyrights">© все права защищены</div>
+          </div><a class="user-agreement" href="#">пользовательское соглашение</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

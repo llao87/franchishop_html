@@ -124,7 +124,7 @@
 }
 
 .catalog-section {
-    padding: 4.2em 0 0 0;
+    padding: 4.2em 0 4.5em 0;
     .container {
         display: flex;
         align-items: stretch;
@@ -148,6 +148,9 @@
                 z-index: 10;
                 background: transparent;
                 cursor: pointer;
+                option {
+                    font-weight: 300;
+                }
             }
             &::after {
                 display: block;
@@ -218,32 +221,69 @@
         .franchises {
             width: auto;
             flex: 1;
-            padding: 0 0 0 0.4em;
+            padding: 0 0.6em 0 1.2em;
             .sort-blocks {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin: 0 0 3.8em 0;
+                margin: 0 0 4.6em 0;
                 .selector-wrap {
                     border: none;
                     width: 13em;
                     background-color: #fff;
                     margin: 0;
+                    border-radius: 0.5em;
+                    flex: none;
+                    &:nth-child(1) {
+                        width: 10.3em;
+                    }
+                    &:nth-child(2) {
+                        width: 15.8em;
+                    }
+                    &:nth-child(3) {
+                        width: 14.2em;
+                    }
+                    &:nth-child(4) {
+                        width: 10em;
+                    }
+                    &::after {
+                        display: block;
+                        position: absolute;
+                        content: "";
+                        background-color: #fff;
+                        background-image: url(../img/icon-sort-selector-arrow.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 0.6em;
+                        height: 0.6em;
+                        top: 50%;
+                        right: 0.9em;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                    .filter-selector {
+                        font-weight: 300;
+                        padding: 0.7em 1.1em 0.8em 0.7em;
+                        letter-spacing: -0.025em;
+                        option {
+                            font-weight: 300;
+                        }
+                    }
+                    .sort-popularity {}
+                    .sort-region {}
+                    .sort-category {}
+                    .sort-investment {}
                 }
-                .sort-popularity {}
-                .sort-region {}
-                .sort-category {}
-                .sort-investment {}
             }
             .franchises-list {
                 display: flex;
                 align-items: stretch;
                 justify-content: space-between;
                 flex-wrap: wrap;
-                padding: 0 1em;
                 .franchise {
                     width: 49%;
-                    padding: 2em;
+                    padding: 2.4em 3.1em 2.8em 2em;
                     border-radius: 2em;
                     background-color: #fff;
                     height: 42em;
@@ -252,11 +292,20 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        .name {}
+                        margin: 0 0 1.8em 0;
+                        .name {
+                            font-size: 1.6em;
+                            font-weight: 600;
+                            margin: 0.2em 0 0 0.4em;
+                            letter-spacing: 0.01em;
+                        }
                         .fr-logo {
-                            width: 13em;
-                            height: 5.5em;
+                            width: 13.9em;
+                            height: 6.05em;
                             overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             .fr-logo-img {
                                 max-width: 100%;
                                 max-height: 100%;
@@ -269,26 +318,108 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        margin: 0 0 3.6em 0;
                         .photo {
+                            width: 100%;
+                            height: 18em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 1em;
+                            overflow: hidden;
                             .photo-img {
                                 max-width: 100%;
-                                max-height: 100%;
-                                width: auto;
+                                width: 100%;
                                 height: auto;
                             }
                         }
                     }
                     .row-bottom {
                         display: flex;
-                        align-items: center;
+                        align-items: flex-end;
                         justify-content: space-between;
+                        flex-wrap: wrap;
                         .investment {
+                            padding: 0;
+                            font-size: 1.6em;
+                            font-weight: 600;
+                            letter-spacing: 0.02em;
+                            width: 100%;
+                            margin: 0 0 1.4em 0;
                             .label {}
                             .value {}
                             .currency {}
                         }
-                        .category {}
-                        .more {}
+                        .category {
+                            font-size: 1.6em;
+                            font-weight: 300;
+                            padding: 0.5em 0.95em;
+                            text-transform: lowercase;
+                            letter-spacing: 0.03em;
+                            border-radius: 0.5em;
+                            margin: 0;
+                            text-decoration: none;
+                            color: $text;
+                            transition: all 0.3s linear;
+                            background-color: $tagPink;
+                            &:hover {
+                                color: $accent;
+                            }
+                        }
+                        .more {
+                            position: relative;
+                            background-image: url(../img/icon-arrow-blk.svg);
+                            display: block;
+                            font-size: 1.6em;
+                            text-transform: lowercase;
+                            text-decoration: none;
+                            color: $text;
+                            background-position: center right;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            z-index: 1;
+                            transition: all 0.3s linear;
+                            padding: 0 1.6em 0 0;
+                            margin: 0 0 0.2em 0;
+                            letter-spacing: 0.03em;
+                            &:hover {
+                                color: $accent;
+                                background-image: url(../img/icon-arrow.svg);
+                            }
+                        }
+                    }
+                }
+            }
+            .show-more-wrap {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 3em 0 0 0;
+                .show-more {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.6em;
+                    text-transform: lowercase;
+                    letter-spacing: 0.02em;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    padding: 0 0.6em 0 0;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 1em;
+                        height: 100%;
+                        background-image: url(../img/icon-arrow-load-more.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        right: -1em;
+                    }
+                    &:hover {
+                        color: $accent;
                     }
                 }
             }

@@ -9,12 +9,12 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('pug', async function() {
-	del.sync('src/*.html')
-	return gulp.src('src/pug/**/*.pug')
-		.pipe(pug({
-			pretty: true
-		}))
-		.pipe(gulp.dest('src/'))
+    del.sync('src/*.html')
+    return gulp.src('src/pug/**/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('src/'))
 })
 
 gulp.task('clean', async function() {
@@ -37,6 +37,7 @@ gulp.task('css', async function() {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/swiper-bundle.min.css',
+            // 'node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css',
         ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('src/scss'))
@@ -56,6 +57,7 @@ gulp.task('script', async function() {
 gulp.task('js', async function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/jquery-ui/dist/jquery-ui.min.js',
             'node_modules/swiper/swiper-bundle.min.js',
         ])
         .pipe(concat('libs.min.js'))
@@ -90,8 +92,8 @@ gulp.task('export', async function() {
 });
 
 gulp.task('watch', async function() {
-	gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
-	gulp.watch('src/pug-parts/**/*.pug', gulp.parallel('pug'));
+    gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
+    gulp.watch('src/pug-parts/**/*.pug', gulp.parallel('pug'));
     gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'));
     gulp.watch('src/*.html', gulp.parallel('html'));
     gulp.watch('src/js/*.js', gulp.parallel('script'));

@@ -50,13 +50,13 @@
         .franchises
             form.sort-blocks 
                 .selector-wrap
-                    select.filter-selector.sort-popularity(name="sort-popularity")
+                    select.filter-selector.sort-popularity.js-sort-popularity(name="sort-popularity")
                         option(selected) Популярности 
                         option Дате публикации 
                         option От дешевых к дорогим 
                         option От дорогих к дешевым
                 .selector-wrap
-                    select.filter-selector.sort-region(name="sort-region")
+                    select.filter-selector.sort-region.js-sort-region(name="sort-region")
                         option(selected) Вся Россия
                         option Алтайский край
                         option Амурская область
@@ -71,7 +71,7 @@
                         option Еврейская автономная область
                         option Забайкальский край
                         option Ивановская область
-                        option Иные территории включая город и космодром Байконур
+                        option Иные территории, гор. и космодром Байконур
                         option Иркутская область
                         option Кабардино-Балкарская Республика
                         option Калининградская область
@@ -145,7 +145,7 @@
                         option Ямало-Ненецкий автономный округ
                         option Ярославская область
                 .selector-wrap
-                    select.filter-selector.sort-category(name="sort-category")
+                    select.filter-selector.sort-category.js-sort-category(name="sort-category")
                         option(selected) Все франшизы
                         option Авто
                         option Бижутерия и аксессуары
@@ -166,11 +166,11 @@
                         option Строительство
                         option Товары для дома
                         option Товары для здоровья
-                        option Услуги для бизнеса \(b2b\)
+                        option Услуги для бизнеса (b2b)
                         option Услуги для населения
                         option Финансовые услуги
                 .selector-wrap
-                    select.filter-selector.sort-investment(name="sort-investment")
+                    select.filter-selector.sort-investment.js-sort-investment(name="sort-investment")
                         option(selected) Любая сумма
                         option до 500 тыс
                         option 500 тыс. – 1 млн
@@ -194,7 +194,7 @@
                             span.value 5 000 000 
                             span.currency руб.
                         .category розничная торговля
-                        a.more(href="#") 
+                        a.more(href="#") Подробнее
 
                 .franchise
                     .row-top 
@@ -210,7 +210,7 @@
                             span.value 5 000 000 
                             span.currency руб.
                         .category розничная торговля
-                        a.more(href="#") 
+                        a.more(href="#") Подробнее
 
                 .franchise
                     .row-top 
@@ -226,7 +226,7 @@
                             span.value 5 000 000 
                             span.currency руб.
                         .category розничная торговля
-                        a.more(href="#") 
+                        a.more(href="#") Подробнее
 
                 .franchise
                     .row-top 
@@ -242,7 +242,7 @@
                             span.value 5 000 000 
                             span.currency руб.
                         .category розничная торговля
-                        a.more(href="#") 
+                        a.more(href="#") Подробнее
 
                 .franchise
                     .row-top 
@@ -258,7 +258,7 @@
                             span.value 5 000 000 
                             span.currency руб.
                         .category розничная торговля
-                        a.more(href="#") 
+                        a.more(href="#") Подробнее
 
                 .franchise
                     .row-top 
@@ -274,4 +274,6 @@
                             span.value 5 000 000 
                             span.currency руб.
                         .category розничная торговля
-                        a.more(href="#") 
+                        a.more(href="#") Подробнее
+            .show-more-wrap 
+                .show-more.js-show-more Показать больше

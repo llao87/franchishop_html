@@ -19,4 +19,10 @@ jQuery(function() {
             prevEl: ".gallery-prev",
         },
     });
+
+    // sort region select
+    jQuery('.js-sort-popularity').selectmenu();
+    jQuery('.js-sort-region').selectmenu();
+    jQuery('.js-sort-category').selectmenu();
+    jQuery('.js-sort-investment').selectmenu();
 });
