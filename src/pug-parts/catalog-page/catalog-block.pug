@@ -2,16 +2,46 @@
     .container
         .catalog-aside
             form.filter 
-                .selector-wrap
-                    select.filter-selector.category(name="category")
-                .selector-wrap
-                    select.filter-selector.investment(name="investment")
-                .field-wrap
-                    btn.filter-field.top.js-top(name="top") Топ франшиз
-                .field-wrap
-                    btn.filter-field.cheap.js-cheap(name="cheap") Недорогие франшизы
-                .field-wrap
-                    btn.filter-field.popular.js-popular(name="popular") Популярные франшизы
+                .selector-wrap.wrap-category
+                    select.filter-selector(name="category")
+                        option(selected) Все франшизы
+                        option Авто
+                        option Бижутерия и аксессуары
+                        option Гостиницы
+                        option Детские франшизы
+                        option Домашний бизнес
+                        option ИТ и интернет
+                        option Кафе и рестораны
+                        option Обувь
+                        option Обучение и образование
+                        option Одежда
+                        option Отдых и развлечения
+                        option Питание
+                        option Подарки
+                        option Производство
+                        option Розничная торговля
+                        option Спорт, здоровье и красота
+                        option Строительство
+                        option Товары для дома
+                        option Товары для здоровья
+                        option Услуги для бизнеса (b2b)
+                        option Услуги для населения
+                        option Финансовые услуги
+                .selector-wrap.wrap-investment
+                    select.filter-selector(name="investment")
+                        option(selected) Любая сумма
+                        option до 500 тыс
+                        option 500 тыс. – 1 млн
+                        option 1 млн – 3 млн
+                        option 3 млн – 6 млн
+                        option 6 млн – 10 млн
+                        option более 10 млн
+                .field-wrap.wrap-top.js-top
+                    btn.filter-field(name="top") Топ франшиз
+                .field-wrap.wrap-cheap.js-cheap
+                    btn.filter-field(name="cheap") Недорогие франшизы
+                .field-wrap.wrap-popular.js-popular
+                    btn.filter-field(name="popular") Популярные франшизы
 
             .banner
                 img.banner-img(src="/img/banner.jpg" alt="")
@@ -21,13 +51,133 @@
             form.sort-blocks 
                 .selector-wrap
                     select.filter-selector.sort-popularity(name="sort-popularity")
+                        option(selected) Популярности 
+                        option Дате публикации 
+                        option От дешевых к дорогим 
+                        option От дорогих к дешевым
                 .selector-wrap
                     select.filter-selector.sort-region(name="sort-region")
+                        option(selected) Вся Россия
+                        option Алтайский край
+                        option Амурская область
+                        option Архангельская область
+                        option Астраханская область
+                        option Белгородская область
+                        option Брянская область
+                        option Владимирская область
+                        option Волгоградская область
+                        option Вологодская область
+                        option Воронежская область
+                        option Еврейская автономная область
+                        option Забайкальский край
+                        option Ивановская область
+                        option Иные территории включая город и космодром Байконур
+                        option Иркутская область
+                        option Кабардино-Балкарская Республика
+                        option Калининградская область
+                        option Калужская область
+                        option Камчатский край
+                        option Карачаево-Черкесская Республика
+                        option Кемеровская область - Кузбасс
+                        option Кировская область
+                        option Костромская область
+                        option Краснодарский край
+                        option Красноярский край
+                        option Курганская область
+                        option Курская область
+                        option Ленинградская область
+                        option Липецкая область
+                        option Магаданская область
+                        option Москва
+                        option Московская область
+                        option Мурманская область
+                        option Ненецкий автономный округ
+                        option Нижегородская область
+                        option Новгородская область
+                        option Новосибирская область
+                        option Омская область
+                        option Оренбургская область
+                        option Орловская область
+                        option Пензенская область
+                        option Пермский край
+                        option Приморский край
+                        option Псковская область
+                        option Республика Адыгея
+                        option Республика Алтай
+                        option Республика Башкортостан
+                        option Республика Бурятия
+                        option Республика Дагестан
+                        option Республика Ингушетия
+                        option Республика Калмыкия
+                        option Республика Карелия
+                        option Республика Коми
+                        option Республика Крым
+                        option Республика Марий Эл
+                        option Республика Мордовия
+                        option Республика Саха - Якутия
+                        option Республика Северная Осетия - Алания
+                        option Республика Татарстан
+                        option Республика Тыва
+                        option Республика Хакасия
+                        option Ростовская область
+                        option Рязанская область
+                        option Самарская область
+                        option Санкт-Петербург
+                        option Саратовская область
+                        option Сахалинская область
+                        option Свердловская область
+                        option Севастополь
+                        option Смоленская область
+                        option Ставропольский край
+                        option Тамбовская область
+                        option Тверская область
+                        option Томская область
+                        option Тульская область
+                        option Тюменская область
+                        option Удмуртская Республика
+                        option Ульяновская область
+                        option Хабаровский край
+                        option Ханты-Мансийский автономный округ - Югра
+                        option Челябинская область
+                        option Чеченская Республика
+                        option Чувашская Республика - Чувашия
+                        option Чукотский автономный округ
+                        option Ямало-Ненецкий автономный округ
+                        option Ярославская область
                 .selector-wrap
                     select.filter-selector.sort-category(name="sort-category")
+                        option(selected) Все франшизы
+                        option Авто
+                        option Бижутерия и аксессуары
+                        option Гостиницы
+                        option Детские франшизы
+                        option Домашний бизнес
+                        option ИТ и интернет
+                        option Кафе и рестораны
+                        option Обувь
+                        option Обучение и образование
+                        option Одежда
+                        option Отдых и развлечения
+                        option Питание
+                        option Подарки
+                        option Производство
+                        option Розничная торговля
+                        option Спорт, здоровье и красота
+                        option Строительство
+                        option Товары для дома
+                        option Товары для здоровья
+                        option Услуги для бизнеса \(b2b\)
+                        option Услуги для населения
+                        option Финансовые услуги
                 .selector-wrap
                     select.filter-selector.sort-investment(name="sort-investment")
-
+                        option(selected) Любая сумма
+                        option до 500 тыс
+                        option 500 тыс. – 1 млн
+                        option 1 млн – 3 млн
+                        option 3 млн – 6 млн
+                        option 6 млн – 10 млн
+                        option более 10 млн
 
             .franchises-list
                 .franchise

@@ -191,11 +191,19 @@
             width: 33em;
             padding: 0 1.6em;
             .filter {
-                .category {}
-                .investment {}
-                .top {}
-                .cheap {}
-                .popular {}
+                width: 100%;
+                margin: 0 0 4.2em 0;
+                .wrap-category {}
+                .wrap-investment {}
+                .wrap-top {
+                    margin-bottom: 1.2em;
+                }
+                .wrap-cheap {
+                    margin-bottom: 1.2em;
+                }
+                .wrap-popular {
+                    margin: 0;
+                }
             }
             .banner {
                 width: 100%;
@@ -210,6 +218,7 @@
         .franchises {
             width: auto;
             flex: 1;
+            padding: 0 0 0 0.4em;
             .sort-blocks {
                 display: flex;
                 align-items: center;

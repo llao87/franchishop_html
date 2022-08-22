@@ -44,20 +44,52 @@
       <div class="container">
         <div class="catalog-aside">
           <form class="filter"> 
-            <div class="selector-wrap">
-              <select class="filter-selector category" name="category"></select>
+            <div class="selector-wrap wrap-category">
+              <select class="filter-selector" name="category">
+                <option selected>Все франшизы</option>
+                <option>Авто</option>
+                <option>Бижутерия и аксессуары</option>
+                <option>Гостиницы</option>
+                <option>Детские франшизы</option>
+                <option>Домашний бизнес</option>
+                <option>ИТ и интернет</option>
+                <option>Кафе и рестораны</option>
+                <option>Обувь</option>
+                <option>Обучение и образование</option>
+                <option>Одежда</option>
+                <option>Отдых и развлечения</option>
+                <option>Питание</option>
+                <option>Подарки</option>
+                <option>Производство</option>
+                <option>Розничная торговля</option>
+                <option>Спорт, здоровье и красота</option>
+                <option>Строительство</option>
+                <option>Товары для дома</option>
+                <option>Товары для здоровья</option>
+                <option>Услуги для бизнеса (b2b)</option>
+                <option>Услуги для населения</option>
+                <option>Финансовые услуги</option>
+              </select>
             </div>
-            <div class="selector-wrap">
-              <select class="filter-selector investment" name="investment"></select>
+            <div class="selector-wrap wrap-investment">
+              <select class="filter-selector" name="investment">
+                <option selected>Любая сумма</option>
+                <option>до 500 тыс</option>
+                <option>500 тыс. – 1 млн</option>
+                <option>1 млн – 3 млн</option>
+                <option>3 млн – 6 млн</option>
+                <option>6 млн – 10 млн</option>
+                <option>более 10 млн</option>
+              </select>
             </div>
-            <div class="field-wrap">
-              <btn class="filter-field top js-top" name="top">Топ франшиз</btn>
+            <div class="field-wrap wrap-top js-top">
+              <btn class="filter-field" name="top">Топ франшиз</btn>
             </div>
-            <div class="field-wrap">
-              <btn class="filter-field cheap js-cheap" name="cheap">Недорогие франшизы</btn>
+            <div class="field-wrap wrap-cheap js-cheap">
+              <btn class="filter-field" name="cheap">Недорогие франшизы</btn>
             </div>
-            <div class="field-wrap">
-              <btn class="filter-field popular js-popular" name="popular">Популярные франшизы</btn>
+            <div class="field-wrap wrap-popular js-popular">
+              <btn class="filter-field" name="popular">Популярные франшизы</btn>
             </div>
           </form>
           <div class="banner"><img class="banner-img" src="/img/banner.jpg" alt=""></div>
@@ -65,16 +97,141 @@
         <div class="franchises">
           <form class="sort-blocks"> 
             <div class="selector-wrap">
-              <select class="filter-selector sort-popularity" name="sort-popularity"></select>
+              <select class="filter-selector sort-popularity" name="sort-popularity">
+                <option selected>Популярности </option>
+                <option>Дате публикации </option>
+                <option>От дешевых к дорогим </option>
+                <option>От дорогих к дешевым</option>
+              </select>
             </div>
             <div class="selector-wrap">
-              <select class="filter-selector sort-region" name="sort-region"></select>
+              <select class="filter-selector sort-region" name="sort-region">
+                <option selected>Вся Россия</option>
+                <option>Алтайский край</option>
+                <option>Амурская область</option>
+                <option>Архангельская область</option>
+                <option>Астраханская область</option>
+                <option>Белгородская область</option>
+                <option>Брянская область</option>
+                <option>Владимирская область</option>
+                <option>Волгоградская область</option>
+                <option>Вологодская область</option>
+                <option>Воронежская область</option>
+                <option>Еврейская автономная область</option>
+                <option>Забайкальский край</option>
+                <option>Ивановская область</option>
+                <option>Иные территории включая город и космодром Байконур</option>
+                <option>Иркутская область</option>
+                <option>Кабардино-Балкарская Республика</option>
+                <option>Калининградская область</option>
+                <option>Калужская область</option>
+                <option>Камчатский край</option>
+                <option>Карачаево-Черкесская Республика</option>
+                <option>Кемеровская область - Кузбасс</option>
+                <option>Кировская область</option>
+                <option>Костромская область</option>
+                <option>Краснодарский край</option>
+                <option>Красноярский край</option>
+                <option>Курганская область</option>
+                <option>Курская область</option>
+                <option>Ленинградская область</option>
+                <option>Липецкая область</option>
+                <option>Магаданская область</option>
+                <option>Москва</option>
+                <option>Московская область</option>
+                <option>Мурманская область</option>
+                <option>Ненецкий автономный округ</option>
+                <option>Нижегородская область</option>
+                <option>Новгородская область</option>
+                <option>Новосибирская область</option>
+                <option>Омская область</option>
+                <option>Оренбургская область</option>
+                <option>Орловская область</option>
+                <option>Пензенская область</option>
+                <option>Пермский край</option>
+                <option>Приморский край</option>
+                <option>Псковская область</option>
+                <option>Республика Адыгея</option>
+                <option>Республика Алтай</option>
+                <option>Республика Башкортостан</option>
+                <option>Республика Бурятия</option>
+                <option>Республика Дагестан</option>
+                <option>Республика Ингушетия</option>
+                <option>Республика Калмыкия</option>
+                <option>Республика Карелия</option>
+                <option>Республика Коми</option>
+                <option>Республика Крым</option>
+                <option>Республика Марий Эл</option>
+                <option>Республика Мордовия</option>
+                <option>Республика Саха - Якутия</option>
+                <option>Республика Северная Осетия - Алания</option>
+                <option>Республика Татарстан</option>
+                <option>Республика Тыва</option>
+                <option>Республика Хакасия</option>
+                <option>Ростовская область</option>
+                <option>Рязанская область</option>
+                <option>Самарская область</option>
+                <option>Санкт-Петербург</option>
+                <option>Саратовская область</option>
+                <option>Сахалинская область</option>
+                <option>Свердловская область</option>
+                <option>Севастополь</option>
+                <option>Смоленская область</option>
+                <option>Ставропольский край</option>
+                <option>Тамбовская область</option>
+                <option>Тверская область</option>
+                <option>Томская область</option>
+                <option>Тульская область</option>
+                <option>Тюменская область</option>
+                <option>Удмуртская Республика</option>
+                <option>Ульяновская область</option>
+                <option>Хабаровский край</option>
+                <option>Ханты-Мансийский автономный округ - Югра</option>
+                <option>Челябинская область</option>
+                <option>Чеченская Республика</option>
+                <option>Чувашская Республика - Чувашия</option>
+                <option>Чукотский автономный округ</option>
+                <option>Ямало-Ненецкий автономный округ</option>
+                <option>Ярославская область</option>
+              </select>
             </div>
             <div class="selector-wrap">
-              <select class="filter-selector sort-category" name="sort-category"></select>
+              <select class="filter-selector sort-category" name="sort-category">
+                <option selected>Все франшизы</option>
+                <option>Авто</option>
+                <option>Бижутерия и аксессуары</option>
+                <option>Гостиницы</option>
+                <option>Детские франшизы</option>
+                <option>Домашний бизнес</option>
+                <option>ИТ и интернет</option>
+                <option>Кафе и рестораны</option>
+                <option>Обувь</option>
+                <option>Обучение и образование</option>
+                <option>Одежда</option>
+                <option>Отдых и развлечения</option>
+                <option>Питание</option>
+                <option>Подарки</option>
+                <option>Производство</option>
+                <option>Розничная торговля</option>
+                <option>Спорт, здоровье и красота</option>
+                <option>Строительство</option>
+                <option>Товары для дома</option>
+                <option>Товары для здоровья</option>
+                <option>Услуги для бизнеса \(b2b\)</option>
+                <option>Услуги для населения</option>
+                <option>Финансовые услуги</option>
+              </select>
             </div>
             <div class="selector-wrap">
-              <select class="filter-selector sort-investment" name="sort-investment"></select>
+              <select class="filter-selector sort-investment" name="sort-investment">
+                <option selected>Любая сумма</option>
+                <option>до 500 тыс</option>
+                <option>500 тыс. – 1 млн</option>
+                <option>1 млн – 3 млн</option>
+                <option>3 млн – 6 млн</option>
+                <option>6 млн – 10 млн</option>
+                <option>более 10 млн</option>
+              </select>
             </div>
           </form>
           <div class="franchises-list">
